@@ -14,7 +14,7 @@ Section                     |Contents
 
 <a id="s1-1-Variables"></a>
 
-### Variable name
+### Variable names
 
 1. Question Variables - no spaces, use caps to separate words \([CamelCase](https://en.wikipedia.org/wiki/Camel_case)\):
 
