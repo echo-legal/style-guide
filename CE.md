@@ -4,9 +4,8 @@
 
 Section                     |Contents
 ----------------------------|----------------
-[Naming conventions](#s1-NamingConventions)   |[Variables](#s1-1-Variables) - [Template references](#s1-2-Templates)
+[Naming conventions](#s1-NamingConventions)   |Variables - Template references
 [Automation markup](#s2-Markup)   |Markup brackets - Colors
-[Best practice](#s3-BestPractice) |Spell-check - QA
 
 <a id="s1-NamingConventions"></a>
 
@@ -16,14 +15,46 @@ Section                     |Contents
 
 ### Variable name
 
+1. Question Variables - no spaces, use caps to separate words \([CamelCase](https://en.wikipedia.org/wiki/Camel_case)\):
+
+    * `BorrowerName`
+    * `AgreementDate`
+    * `MonthlyPayment`
+
+2. Calculations (variable type Computable) which return values other than true/false follow the same principle:
+
+    * `AnnualPaymentCalculation`
+    
+3. Computable variables, used in spans to control additional woridng so will evaluate to true or false: all caps, underscores to separate words. Try to include a verb to phrase as a question:
+
+    * `HAS_MULTI_BORROWERS` 
+    * `HAS_SINGLE_CORPORATE_BORROWER`
+    * `INCLUDE_OPTIONAL_WORDING`
+    *  `USE_LONDON_TIME`
+
 <a id="s1-2-Templates"></a>
 
 ### Template references
+
+1. Spaces in references are allowed, so should be used to make them easier to read. Avoid including client names in the references.
+
+    * `On Demand Offer Letter`
+    * `HR Terms of Employment`
 
 <a id="s2-Markup"></a>
 
 ## Automation markup
 
-<a id="s3-BestPractice"></a>
+1. The echo.legal default markup brackets are:
 
-## Best practice
+    * `<>` for spans
+    * `{}` for fields
+
+2. Use *default colours* for highlighting markup. Do not change these colours to keep consistency.
+
+    Default colours are (values given in HEX):
+    * Fields: `#0000FF`
+    * Span brackets: `#FF4500`
+    * Business rules: `#800000`
+
+3. Spell Check entire dictionary before delivery.
