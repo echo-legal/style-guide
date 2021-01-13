@@ -6,6 +6,7 @@ Section                     |Contents
 ----------------------------|----------------
 [Naming conventions](#s1-NamingConventions)   |Variables - Template references
 [Automation markup](#s2-Markup)   |Markup brackets - Colors
+[Best practice](#s3-BestPractice) | Indents
 
 <a id="s1-NamingConventions"></a>
 
@@ -58,3 +59,13 @@ Section                     |Contents
     * Business rules: `#800000`
 
 3. Spell Check entire dictionary before delivery.
+
+<a id="s3-BestPractice"></a>
+
+## Best practice
+
+### Indents
+
+1. When working on a particularly long piece of code in a computable (3+ functions, 5+ lines), consider adding line breaks and indents to show where functions and properties start and end.
+
+    You can use tools like [CE code indenter](https://kgeorgiadis-law.github.io/ce-formatter/) to automatically indent your code.
