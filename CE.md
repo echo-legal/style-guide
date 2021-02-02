@@ -26,7 +26,7 @@ Section                     |Contents
 
     * `AnnualPaymentCalculation`
     
-3. Computable variables, used in spans to control additional woridng so will evaluate to true or false: all caps, underscores to separate words. Try to include a verb to phrase as a question:
+3. Computable variables, used in spans to control additional wording so will evaluate to true or false: all caps, underscores to separate words. Try to include a verb to phrase as a question:
 
     * `HAS_MULTI_BORROWERS` 
     * `HAS_SINGLE_CORPORATE_BORROWER`
