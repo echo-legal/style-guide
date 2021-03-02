@@ -6,7 +6,7 @@ Section                     |Contents
 ----------------------------|----------------
 [Naming conventions](#s1-NamingConventions)   |Variables - Template references
 [Automation markup](#s2-Markup)   |Markup brackets - Colors
-[Best practice](#s3-BestPractice) | Indents
+[Best practice](#s3-BestPractice) | Indents - Comments
 
 <a id="s1-NamingConventions"></a>
 
@@ -66,6 +66,14 @@ Section                     |Contents
 
 ### Indents
 
-1. When working on a particularly long piece of code in a computable (3+ functions, 5+ lines), consider adding line breaks and indents to show where functions and properties start and end.
+When working on a particularly long piece of code in a computable (nested functions, 5+ lines), consider adding line breaks and indents to show where functions and properties start and end.
 
-    You can use tools like [CE code indenter](https://kgeorgiadis-law.github.io/ce-formatter/) to automatically indent your code.
+You can use tools like [CE code indenter](https://kgeorgiadis-law.github.io/ce-formatter/) to automatically indent your code.
+
+### Comments
+It is not always immediately obvious what a line of code does, or what your intention in using one function over another is. Use `--` to insert comments in your CE code. This is really useful when e.g. creating custom functions, writing long computables, or defining the list of options for a text selection. For example:
+
+```
+--get sum of all values without triggering relevance
+sum(CollectValues(Var1))
+```
