@@ -25,6 +25,12 @@ Section                     |Contents
 2. Calculations (variable type Computable) which return values other than true/false follow the same principle:
 
     * `AnnualPaymentCalculation`
+
+3. Variables which determine the time a group of variables is repeated (repeat counts) should end in '-Count', for example:
+
+   * `ContractCount`
+   * `TargetCount`
+   * `ShareCount`
     
 3. Computable variables, used in spans to control additional wording so will evaluate to true or false: all caps, underscores to separate words. Try to include a verb to phrase as a question:
 
